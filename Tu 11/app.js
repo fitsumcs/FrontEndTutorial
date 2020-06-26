@@ -1,19 +1,19 @@
 // Socer 
 
-fetch("https://free-football-soccer-videos1.p.rapidapi.com/v1/", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "free-football-soccer-videos1.p.rapidapi.com",
-		"x-rapidapi-key": "64bca0886bmsha7377930000aed5p1a6aecjsn8fa7b68dbbfb"
-	}
-})
-.then(response => {
-	return response.json();
-})
-.then(data=>{console.log(data)})
-.catch(err => {
-	console.log(err);
-});
+// fetch("https://free-football-soccer-videos1.p.rapidapi.com/v1/", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-host": "free-football-soccer-videos1.p.rapidapi.com",
+// 		"x-rapidapi-key": "64bca0886bmsha7377930000aed5p1a6aecjsn8fa7b68dbbfb"
+// 	}
+// })
+// .then(response => {
+// 	return response.json();
+// })
+// .then(data=>{console.log(data)})
+// .catch(err => {
+// 	console.log(err);
+// });
 
 // fetch("https://imdb-internet-movie-database-unofficial.p.rapidapi.com/search/inception", {
 // 	"method": "GET",
@@ -86,3 +86,17 @@ fetch("https://free-football-soccer-videos1.p.rapidapi.com/v1/", {
 // .catch(err => {
 // 	console.log(err);
 // });
+
+fetch("https://password-generator.p.rapidapi.com/v1/password?Symbols=0&Uppercase=1&Length=8&ExcludeSimilar=1&Numbers=1&Lowercase=1", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "password-generator.p.rapidapi.com",
+		"x-rapidapi-key": "64bca0886bmsha7377930000aed5p1a6aecjsn8fa7b68dbbfb"
+	}
+})
+.then(response => {
+	console.log(response.text());
+})
+.catch(err => {
+	console.log(err);
+});
