@@ -87,16 +87,31 @@
 // 	console.log(err);
 // });
 
-fetch("https://password-generator.p.rapidapi.com/v1/password?Symbols=0&Uppercase=1&Length=8&ExcludeSimilar=1&Numbers=1&Lowercase=1", {
+// fetch("https://password-generator.p.rapidapi.com/v1/password?Symbols=0&Uppercase=1&Length=8&ExcludeSimilar=1&Numbers=1&Lowercase=1", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-host": "password-generator.p.rapidapi.com",
+// 		"x-rapidapi-key": "64bca0886bmsha7377930000aed5p1a6aecjsn8fa7b68dbbfb"
+// 	}
+// })
+// .then(response => {
+// 	console.log(response.text());
+// })
+// .catch(err => {
+// 	console.log(err);
+// });
+
+fetch("https://currency26.p.rapidapi.com/list", {
 	"method": "GET",
 	"headers": {
-		"x-rapidapi-host": "password-generator.p.rapidapi.com",
+		"x-rapidapi-host": "currency26.p.rapidapi.com",
 		"x-rapidapi-key": "64bca0886bmsha7377930000aed5p1a6aecjsn8fa7b68dbbfb"
 	}
 })
 .then(response => {
-	console.log(response.text());
+	return response.json();
 })
+.then(data=>{console.log(data)})
 .catch(err => {
 	console.log(err);
 });
