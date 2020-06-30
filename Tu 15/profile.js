@@ -3,21 +3,21 @@ const data = [
      name : "First Person",
      age : 21,
      lookingFor : "Female",
-     location: "Bosten",
+     location: "Addis Ababa",
      image: "https://randomuser.me/api/portraits/me/82.jpg"
  },
  {
     name : "Second Person",
     age : 22,
-    lookingFor : "Female",
-    location: "Bosten",
+    lookingFor : "Male",
+    location: "Gonder",
     image: "https://randomuser.me/api/portraits/me/83.jpg"
 },
 {
     name : "Third Person",
     age : 23,
     lookingFor : "Female",
-    location: "Bosten",
+    location: "Bahirdar",
     image: "https://randomuser.me/api/portraits/me/84.jpg"
 }
 ];
