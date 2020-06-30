@@ -109,7 +109,7 @@ fetch("https://currency26.p.rapidapi.com/list", {
 	}
 })
 .then(response => {
-	return response.json();
+	return response.s();
 })
 .then(data=>{console.log(data)})
 .catch(err => {
